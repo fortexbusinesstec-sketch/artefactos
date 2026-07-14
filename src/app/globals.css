@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 :root {
   --background: #ffffff;
@@ -23,4 +24,70 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MDEditor dark mode overrides */
+.dark .wmde-markdown {
+  background-color: transparent !important;
+  color: #e4e4e7 !important;
+}
+
+.dark .wmde-markdown code {
+  background-color: #27272a !important;
+  color: #e4e4e7 !important;
+}
+
+.dark .wmde-markdown pre {
+  background-color: #18181b !important;
+}
+
+.dark .wmde-markdown table th {
+  background-color: #27272a !important;
+}
+
+.dark .wmde-markdown table td,
+.dark .wmde-markdown table th {
+  border-color: #3f3f46 !important;
+}
+
+.dark .wmde-markdown blockquote {
+  border-left-color: #3b82f6 !important;
+  background-color: rgba(39, 39, 42, 0.5) !important;
+}
+
+.dark .wmde-markdown hr {
+  border-color: #3f3f46 !important;
+}
+
+/* MDEditor light mode overrides */
+.wmde-markdown {
+  background-color: transparent !important;
+  color: #18181b !important;
+}
+
+.wmde-markdown code {
+  background-color: #f4f4f5 !important;
+  color: #27272a !important;
+}
+
+.wmde-markdown pre {
+  background-color: #fafafa !important;
+}
+
+.wmde-markdown table th {
+  background-color: #f4f4f5 !important;
+}
+
+.wmde-markdown table td,
+.wmde-markdown table th {
+  border-color: #e4e4e7 !important;
+}
+
+.wmde-markdown blockquote {
+  border-left-color: #3b82f6 !important;
+  background-color: rgba(239, 246, 255, 0.6) !important;
+}
+
+.wmde-markdown hr {
+  border-color: #e4e4e7 !important;
 }
